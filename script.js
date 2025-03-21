@@ -10,10 +10,10 @@ form.addEventListener('submit', function (event) {
   // Get form values
   const teamNumber = teamNumberInput.value;
   const score = scoreInput.value;
-  const alge= alageInput.value;
+  const alge = alageInput.value;
   // Create list item for team data
   const listItem = document.createElement('li');
-  listItem.textContent = `Team ${teamNumber}: ${score} points`;
+  listItem.textContent = `Team ${teamNumber}: ${score}: ${alge} points`;
     
   // Append to results list
   resultsList.appendChild(listItem);
@@ -21,12 +21,13 @@ form.addEventListener('submit', function (event) {
   // Clear form inputs
   teamNumberInput.value = '';
   scoreInput.value = '';
+  algeNet.value = '';
 });
 const form = document.getElementById('scouting-form');
 const teamNumberInput = document.getElementById('teamNumber');
 const scoreInput = document.getElementById('score');
 const resultsList = document.getElementById('results-list');
-
+const alageInput = documennt.getElementById('alge');
 // Load saved data from localStorage
 window.onload = function() {
   const savedData = JSON.parse(localStorage.getItem('scoutingData'));
