@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRC Scouting</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>FRC Scouting</h1>
+    </header>
+
+    <main>
+      <section id="team-scoring">
+        <h2>Enter Team Data</h2>
+        <form id="scouting-form">
+          <label for="teamNumber">Team Number:</label>
+          <input type="number" id="teamNumber" required />
+
+          <label for="score">Score:</label>
+          <input type="number" id="score" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="team-results">
+        <h2>Results</h2>
+        <ul id="results-list">
+          <!-- Scouting data will appear here -->
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
