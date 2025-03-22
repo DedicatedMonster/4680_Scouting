@@ -13,7 +13,7 @@ form.addEventListener('submit', function (event) {
   const alge = alageInput.value;
   // Create list item for team data
   const listItem = document.createElement('li');
-  listItem.textContent = `Team ${teamNumber}: ${score}: ${alge} points`;
+  listItem.textContent = `Team ${teamNumber}: ${score}: ${alge}: points`;
     
   // Append to results list
   resultsList.appendChild(listItem);
